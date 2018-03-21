@@ -1,0 +1,19 @@
+{
+  "name": "embedding-v8",
+  "version": "1.0.0",
+  "description": "Examples and slides for embedding v8 with isolated-vm",
+  "main": "index.ts",
+  "dependencies": {
+    "isolated-vm": "^1.4.2",
+    "ts-node": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.7",
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "author": "Kurt Mackey",
+  "license": "Apache License 2.0"
+}

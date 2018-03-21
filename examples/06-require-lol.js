@@ -1,0 +1,1 @@
+let lib = require('anything')
