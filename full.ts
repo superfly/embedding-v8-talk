@@ -88,6 +88,7 @@ function handleFetch(url: string, callback: ivm.Reference<Function>) {
         headers: resp.headers,
         body: null
       }
+      console.log("node:", v8resp)
       v8resp.body = body
       // This is the v8 callback, we send it null for `this` and an array of
       // arguments to pass to the v8 function. Since there aren't any errors, 

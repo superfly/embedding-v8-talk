@@ -38,7 +38,6 @@ new function () {
         } else {
           resolve(JSON.parse(resp))
         }
-        _busy = false
       })
       fetch.apply(null, [url, callback])
     })
