@@ -25,12 +25,12 @@ new function () {
   }
   // Other half of fetch function in this isolate
   let fetch = _fetch
+  delete _fetch
 
   // This is just a dumb fetch that returns a basic response with the body as a 
   // string. And since we love promises, we turn it into a promise along the way so
   // we can use it like `await fetch("https://wat")`
   global.fetch = function (url) {
-    _busy = true
     return new Promise((resolve, reject) => {
       const callback = new ivm.Reference(function (err, resp) {
         if (err) {

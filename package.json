@@ -4,7 +4,7 @@
   "description": "Examples and slides for embedding v8 with isolated-vm",
   "main": "index.ts",
   "dependencies": {
-    "isolated-vm": "^1.4.2",
+    "isolated-vm": "^1.6.1",
     "ts-node": "^5.0.1"
   },
   "devDependencies": {
